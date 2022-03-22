@@ -6,6 +6,7 @@ import "./navbar.css";
 function NavBar() {
   return (
     <>
+      {/* navbar starts here */}
       <Container>
         <Row>
           <Col className="studentDash">
