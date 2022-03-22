@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Faculty from './screens/faculty/faculty';
+
+import "./App.css";
+import Login from "./screens/login/login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/navbar/navbar";
 
 function App() {
   return (
-    <div>
-      <Faculty />
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/navbar" element={<NavBar />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
